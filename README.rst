@@ -10,8 +10,8 @@ We will run the demo to find the best way of splitting a 40-node graph (an Erdos
 
 Usage
 -----
-To run the demo, type:
-::
+To run the demo, type::
+
   python graph_partitioning.py
 
 After running, output will be printed to the command line that states whether or not the best (lowest energy) solution found is a valid partition that splits the graph into two sets of 20 nodes.  If the solution is valid (feasible), then the number of cut edges for that solution is displayed.
@@ -79,4 +79,4 @@ References
 
 License
 -------
-Released under the Apache License 2.0. See `LICENSE <../LICENSE>`_ file.
+Released under the Apache License 2.0. See `LICENSE <./LICENSE>`_ file.
