@@ -1,5 +1,6 @@
-Graph Partitioning Demo
-=======================
+==================
+Graph Partitioning
+==================
 In this demo, we explore the graph partitioning problem.  This is an interesting problem from graph theory with a wide variety of applications (see e.g. [3]_).
 
 For example, suppose that we have a group of people that we need to split into two equal-sized teams.  Between some pairs of people there is a friendly relationship.  We want to have as few friends on opposite teams as possible.  How can we solve this problem?
