@@ -99,7 +99,9 @@ To combine our objective and constraints into a single QUBO expression, we
 simply add together the objective function and our constraint (multiplied by
 gamma, the Lagrange parameter).
 
-.. image:: readme_imgs/final_QUBO.png :align: center :height: 100
+.. image:: readme_imgs/final_QUBO.png
+   :align: center
+   :height: 100
 
 In the code, we create the Q matrix for this QUBO as a dictionary iteratively,
 looping over the edges and nodes in our graph just as we see in the summation
