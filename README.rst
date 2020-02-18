@@ -1,3 +1,7 @@
+.. image:: https://circleci.com/gh/dwave-examples/graph-partitioning.svg?style=svg
+    :target: https://circleci.com/gh/dwave-examples/graph-partitioning
+    :alt: Linux/Mac/Windows build status
+
 ==================
 Graph Partitioning
 ==================
