@@ -27,3 +27,17 @@ class TestDemo(unittest.TestCase):
 
         demo_file = os.path.join(project_dir, 'graph_partitioning.py')
         subprocess.check_output([sys.executable, demo_file])
+
+    def test_graph_partitioning(self):
+        demo_file = os.path.join(project_dir, 'graph_partitioning.py')
+        output=subprocess.check_output([sys.executable, demo_file])
+        output=str(output)
+        if os.getenv('DEBUG_OUTPUT'):
+            print("Example output \n"+ output)
+
+        with self.subTest(msg="Verify if output contains 'Valid partition found' \n"):
+            self.assertIn("Valid partition found".upper(),output.upper())
+        with self.subTest(msg="Verify if error string contains in output \n"):
+            self.assertNotIn("ERROR",output.upper())
+        with self.subTest(msg="Verify if warning string contains in output \n"):
+            self.assertNotIn("WARNING",output.upper())
