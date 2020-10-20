@@ -52,7 +52,7 @@ for i, j in combinations(G.nodes, 2):
 chain_strength = gamma*len(G.nodes)
 
 # Run the QUBO on the solver from your config file
-sampler = EmbeddingComposite(DWaveSampler(solver={'qpu': True}))
+sampler = EmbeddingComposite(DWaveSampler())
 response = sampler.sample_qubo(Q, chain_strength=chain_strength, num_reads=num_reads)
 
 # See if the best solution found is feasible, and if so print the number of cut edges.
