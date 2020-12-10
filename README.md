@@ -109,9 +109,12 @@ looping over the edges and nodes in our graph just as we see in the summation
 of our QUBO expression.
 
 This demo generates an Erdos-Renyi random graph using the `networkx` package
-for our problem instance [[1]](#1). There are three parameters to be set by the user
-in this code:  chain strength, number of reads, and gamma.  Since this is a
-relatively large problem, we set a large number of reads (`num_reads = 1000`).
+for our problem instance [[1]](#1). For more information on this graph
+generator, see the [NetworkX documentation]
+(https://networkx.org/documentation/stable/reference/generated/networkx.generators.random_graphs.gnp_random_graph.html#networkx.generators.random_graphs.gnp_random_graph). 
+There are three parameters to be set by the user in this code:  chain strength,
+number of reads, and gamma.  Since this is a relatively large problem, we set a
+large number of reads (`num_reads = 1000`).
 
 For chain strength, we examine the entries in our Q matrix and choose a
 relatively large number to enforce chains in our embedding.  For this problem,
