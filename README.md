@@ -148,7 +148,7 @@ program with `gamma=80`.
    Supercomputing. ACM, 2017.
 
 <a name="4">[4]</a> Wikipedia contributors, "Minimum cut," Wikipedia, The Free Encyclopedia,
-   https://en.wikipedia.org/w/index.php?title=Minimum_cut&oldid=907409652
+   https://en.wikipedia.org/wiki/Minimum_cut
    (accessed August 18, 2019).
 
 ## License
