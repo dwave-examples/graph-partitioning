@@ -138,8 +138,7 @@ program with `gamma=80`.
 <a name="1">[1]</a> Aric A. Hagberg, Daniel A. Schult and Pieter J. Swart, “Exploring
    network structure, dynamics, and function using NetworkX”, in Proceedings
    of the 7th Python in Science Conference (SciPy2008), Gäel Varoquaux, Travis
-   Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA), pp. 11–15, Aug 2008
-   (https://networkx.github.io/documentation/stable/reference/generated/networkx.generators.random_graphs.gnp_random_graph.html#networkx.generators.random_graphs.gnp_random_graph)
+   Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA), pp. 11–15, Aug 2008.
 
 [2] Andrew Lucas, "Ising formulations of many NP problems",
    [doi: 10.3389/fphy.2014.00005](https://www.frontiersin.org/articles/10.3389/fphy.2014.00005/full)
