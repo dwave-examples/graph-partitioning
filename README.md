@@ -109,9 +109,11 @@ looping over the edges and nodes in our graph just as we see in the summation
 of our QUBO expression.
 
 This demo generates an Erdos-Renyi random graph using the `networkx` package
-for our problem instance [[1]](#1). There are three parameters to be set by the user
-in this code:  chain strength, number of reads, and gamma.  Since this is a
-relatively large problem, we set a large number of reads (`num_reads = 1000`).
+for our problem instance [[1]](#1). For more information on this graph
+generator, see the [NetworkX documentation](https://networkx.org/documentation/stable/reference/generated/networkx.generators.random_graphs.gnp_random_graph.html#networkx.generators.random_graphs.gnp_random_graph). 
+There are three parameters to be set by the user in this code:  chain strength,
+number of reads, and gamma.  Since this is a relatively large problem, we set a
+large number of reads (`num_reads = 1000`).
 
 For chain strength, we examine the entries in our Q matrix and choose a
 relatively large number to enforce chains in our embedding.  For this problem,
@@ -136,8 +138,7 @@ program with `gamma=80`.
 <a name="1">[1]</a> Aric A. Hagberg, Daniel A. Schult and Pieter J. Swart, “Exploring
    network structure, dynamics, and function using NetworkX”, in Proceedings
    of the 7th Python in Science Conference (SciPy2008), Gäel Varoquaux, Travis
-   Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA), pp. 11–15, Aug 2008
-   (https://networkx.github.io/documentation/stable/reference/generated/networkx.generators.random_graphs.gnp_random_graph.html#networkx.generators.random_graphs.gnp_random_graph)
+   Vaught, and Jarrod Millman (Eds), (Pasadena, CA USA), pp. 11–15, Aug 2008.
 
 [2] Andrew Lucas, "Ising formulations of many NP problems",
    [doi: 10.3389/fphy.2014.00005](https://www.frontiersin.org/articles/10.3389/fphy.2014.00005/full)
@@ -148,7 +149,7 @@ program with `gamma=80`.
    Supercomputing. ACM, 2017.
 
 <a name="4">[4]</a> Wikipedia contributors, "Minimum cut," Wikipedia, The Free Encyclopedia,
-   https://en.wikipedia.org/w/index.php?title=Minimum_cut&oldid=907409652
+   https://en.wikipedia.org/wiki/Minimum_cut
    (accessed August 18, 2019).
 
 ## License
