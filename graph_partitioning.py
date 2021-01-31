@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # ------ Import necessary packages ----
-import networkx as nx 
+import networkx as nx
 from collections import defaultdict
 from itertools import combinations
 from dwave.system.samplers import DWaveSampler
@@ -53,7 +53,10 @@ chain_strength = gamma*len(G.nodes)
 
 # Run the QUBO on the solver from your config file
 sampler = EmbeddingComposite(DWaveSampler())
-response = sampler.sample_qubo(Q, chain_strength=chain_strength, num_reads=num_reads)
+response = sampler.sample_qubo(Q,
+                               chain_strength=chain_strength,
+                               num_reads=num_reads,
+                               label='Example - Graph Partitioning')
 
 # See if the best solution found is feasible, and if so print the number of cut edges.
 sample = response.record.sample[0]
