@@ -18,7 +18,7 @@ think of our group of people as a graph (a node/vertex for each person), and
 draw an edge between people that are friends, we have a model of our network.
 If we look for a minimum cut [[4]](#4) in our graph, then we are looking for a way
 to split the nodes into two groups so that there are as few edges as possible
-between the groups.  In our group of peoople, this means that we have two teams
+between the groups.  In our group of people, this means that we have two teams
 with as few friends as possible on different teams.
 
 We will run the demo to find the best way of splitting a 40-node graph (an
