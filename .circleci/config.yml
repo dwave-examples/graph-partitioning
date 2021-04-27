@@ -11,10 +11,10 @@ workflows:
       - dwave/test-osx
       - dwave/test-win
 
-  daily:
+  weekly:
     triggers:
       - schedule:
-          cron: "0 9 * * *"
+          cron: "0 1 * * 1"
           filters:
             branches:
               only:
