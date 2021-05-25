@@ -22,12 +22,7 @@ project_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 class TestDemo(unittest.TestCase):
-    def test_smoke(self):
-        """run graph_partitioning.py and check that nothing crashes"""
-
-        demo_file = os.path.join(project_dir, 'graph_partitioning.py')
-        subprocess.check_output([sys.executable, demo_file])
-
+    @unittest.skipIf(os.getenv('SKIP_INT_TESTS'), "Skipping integration test.")
     def test_graph_partitioning(self):
         demo_file = os.path.join(project_dir, 'graph_partitioning.py')
         output = subprocess.check_output([sys.executable, demo_file])
